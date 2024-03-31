@@ -1,0 +1,23 @@
+{
+    "name":"Formater Input Text",
+    "version":"1.0",
+    "manifest_version":3,
+    "background":{
+        "service_worker":"src/js/worker.js"
+    },
+    "permissions":[],
+    "content_scripts":[
+        {
+            "matches":[
+                "https://web.whatsapp.com",
+            ],
+            "js":[
+                "src/js/constants.js",
+                "src/js/wysiwyg.js"
+            ],
+            "css":[
+                "src/css/wysiwyg.css"
+            ]
+        }
+    ]
+}
